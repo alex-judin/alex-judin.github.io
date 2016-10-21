@@ -11,14 +11,6 @@
  
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" charset="utf-8"></script>
 	<script type="text/javascript">
-        $.fn.extend({
-    		animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-    }
-});
 
     $(document).ready(function(){
     
@@ -101,23 +93,50 @@
 	<div class="main-description clearfix">
 	<div class="main-description-intro">
 
-		<p><strong>Электронная коммерция</strong> (электронная торговля, e-commerce) - продажа/покупка товаров и услуг в Интернет. Сервисы электронной коммерции позволяют предпринимателям предоставить в Сети товары и услуги, принимать заказы на них, выставлять счета, получать оплату и переводить деньги клиентам онлайн.</p>
-
-		<p>Электронная коммерция обеспечивает покупку любого товара или услуги, не выходя из дома, просто выбрав соответствующий вариант на одном из сайтов в Интернете, независимо от того, где он расположен и причем круглосуточно. Преимущества такого вида торговли заключаются в огромном выборе товаров и услуг, а также цен на них: всегда можно найти оптимальную для себя.</p>
+		<p><strong>Куда поступать?</strong> <strong>Куда пойти учиться?</strong> Эти вопросы беспокоят выпускников и лишают сна их родителей. Сделать правильный выбор, найти специальность, которая принесёт деньги и моральное удовлетворение очень сложно. Особенно, когда специальностей так много. На пике популярности уже долгое время находятся профессии ІТ-сектора. Владение компьютерами, современными технологиями крайне важно на рынке.</p>
+    <p>Но что делать, если программирование не Ваше призвание? Выход есть. Современный бизнес также тесно связан с ІТ-технологиями, поэтому сейчас многие специальности находятся на стыке технической и экономической сфер деятельности. Электронная коммерция – одна из таких специальностей.</p>
+</p>
 	</div>
 		<div class="main-description-image">
 			<img src="img/e-commerce.jpg" width="400px" alt="электронная коммерция">
 		</div>
 		<div class="main-description-text">
-			<h3>Преимущества занятости в e-commerce</h3>
-			<ul>
-				<li><b>Перспективная работа.</b> На протяжении последних лет рынок электронной коммерции во всем мире (и в Украине тоже) демонстрирует устойчивый рост.</li>
-				<li><b>Востребованная профессия.</b> Растущему рынку требуется постоянный приток новых квалифицированных кадров - специалистов в области электронной коммерции.</li>
-				<li><b>Высокий заработок.</b> Дефицит специалистов, вызванный неудовлетворенностью спроса, формирует устойчивый рост заработной платы.</li>
-			</ul>
+          <strong>Электронная коммерция</strong> (электронная торговля, e-commerce) - продажа/покупка товаров и услуг в Интернет. Сервисы электронной коммерции позволяют предпринимателям предоставить в Сети товары и услуги, принимать заказы на них, выставлять счета, получать оплату и переводить деньги клиентам онлайн.
+
+          <p>Электронная коммерция обеспечивает покупку любого товара или услуги, не выходя из дома, просто выбрав соответствующий вариант на одном из сайтов в Интернете, независимо от того, где он расположен и причем круглосуточно. Преимущества такого вида торговли заключаются в огромном выборе товаров и услуг, а также цен на них: всегда можно найти оптимальную для себя.</p>
 		</div>
 	</div>
 	</div>
+
+<div class="achivement-wrapper">
+  <div class="achivement clearfix">
+    <center><h2>Преимущества занятости в e-commerce</h2></center>
+    <div class="achivement-inner">
+        <div class="achivement-image achivement-image-first">
+          <i class="fa fa-globe fa-5x" aria-hidden="true"></i>
+        </div>
+        <div class="achivement-inner-text">
+          <h3>Перспективная работа</h3>На протяжении последних лет рынок электронной коммерции во всем мире (и в Украине тоже) демонстрирует устойчивый рост.
+        </div>
+    </div>
+    <div class="achivement-inner">
+        <div class="achivement-image">
+          <i class="fa fa-line-chart fa-4x" aria-hidden="true"></i>
+        </div>
+        <div class="achivement-inner-text">
+          <h3>Востребованная профессия</h3> Растущему рынку требуется постоянный приток новых квалифицированных кадров - специалистов в области электронной коммерции.  
+        </div>
+    </div>
+    <div class="achivement-inner">
+        <div class="achivement-image">
+          <i class="fa fa-money fa-4x" aria-hidden="true"></i>
+        </div>
+        <div class="achivement-inner-text">
+          <h3>Высокий заработок</h3>Дефицит специалистов, неудовлетворенность спроса, формирует устойчивый рост заработной платы.
+        </div>
+    </div>
+  </div>
+</div>
 
   <div class="recall clearfix">
   <center><h3>Звезды украинской электронной коммерции</h3></center>
@@ -263,7 +282,7 @@
   			<div class="profession-card-image"><img src="img/manager.jpg" height="250px"></div>
   		</div>
   		<div class="profession-card-left clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
-  			<div class="profession-card-image"><img src="img/manager-2.jpg" height="250px"></div>
+  			<div class="profession-card-image"><img src="img/manager-.jpg" height="250px"></div>
   			<div class="profession-card-text">
   				<h4>Интернет-маркетолог (SMM-маркетолог)</h4>
   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -284,10 +303,10 @@
   				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   			</div>
-  			<div class="profession-card-image"><img src="img/manager-girl.jpg" height="250px"></div>
+  			<div class="profession-card-image"><img src="img/girl.jpg" height="250px"></div>
   		</div>
   		<div class="profession-card-left clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
-  			<div class="profession-card-image"><img src="img/tester.jpg" height="250px"></div>
+  			<div class="profession-card-image"><img src="img/tester-.jpg" height="250px"></div>
   			<div class="profession-card-text">
   				<h4>Специалист по современным бизнес-стратегиям</h4>
   				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
