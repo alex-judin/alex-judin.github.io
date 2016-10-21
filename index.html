@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Куда пойти учиться? Электронная коммерция - сфера цифровой экономики остро нуждающаяся в специалистах.</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+ 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript">
+        $.fn.extend({
+    		animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+
+    $(document).ready(function(){
+    
+    
+        var $menu = $("#menu");
+            
+        $(window).scroll(function(){
+            
+            if ( $(this).scrollTop() > 50 && $menu.hasClass("default") ){
+
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("default")
+                           .addClass("fixed transbg")
+                           .fadeIn('fast');
+                });
+            } else if($(this).scrollTop() <= 50 && $menu.hasClass("fixed")) {
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("fixed transbg")
+                           .addClass("default")
+                           .fadeIn('fast');
+                });
+            }
+
+            $('#elementID').animateCss('bounce');
+        });//scroll
+        
+        $menu.hover(
+            function(){
+                if( $(this).hasClass('fixed') ){
+                    $(this).removeClass('transbg');
+                }
+            },
+            function(){
+                if( $(this).hasClass('fixed') ){
+                    $(this).addClass('transbg');
+                }
+            });//hover
+    });//jQuery
+
+	</script>  
+</head>
+<body>
+	<div id="menu" class="main-navigation default">
+		<div class="menu-logo">
+			<div class="menu-logo-image" onclick="panelShow()"><img src="img/hamburger.gif" width="40px"></div>
+			<div class="menu-logo-font"><p class="class1"></p></div>
+		</div>	
+		<ul>
+			<li><a href="#information">e-commerce</a></li>
+			<li><a href="#program">Программа</a></li>
+			<li><a href="#profession">Профессии</a></li>
+			<li><a href="#user-form">Форма</a></li>
+			<li><a href="#project">О проекте</a></li>
+		</ul>
+	</div>
+
+    <div id="panel" class="menu-panel">
+      <div class="panel-title">
+        Электронная коммерция
+      </div>
+          <ul class="addon-navigation">
+            <li onclick="panelClose()"><a href="#information">e-commerce</a></li>
+            <li onclick="panelClose()"><a href="#program">Программа</a></li>
+            <li onclick="panelClose()"><a href="#profession">Профессии</a></li>
+            <li onclick="panelClose()"><a href="#user-form">Форма</a></li>
+            <li onclick="panelClose()"><a href="#project">О проекте</a></li>
+          </ul>
+    </div>
+
+
+    <div id="mywindow" onclick="panelClose()">    </div>
+
+	<div class="fon">
+		<h1 class="animated bounce">Думаешь, куда пойти учиться?</h1>
+		<p>Электронная коммерция - правильный выбор!</p>
+	</div>
+	
+	<a name="information"></a>
+	<div class="main-description-wrapper">
+	<div class="main-description clearfix">
+	<div class="main-description-intro">
+
+		<p><strong>Электронная коммерция</strong> (электронная торговля, e-commerce) - продажа/покупка товаров и услуг в Интернет. Сервисы электронной коммерции позволяют предпринимателям предоставить в Сети товары и услуги, принимать заказы на них, выставлять счета, получать оплату и переводить деньги клиентам онлайн.</p>
+
+		<p>Электронная коммерция обеспечивает покупку любого товара или услуги, не выходя из дома, просто выбрав соответствующий вариант на одном из сайтов в Интернете, независимо от того, где он расположен и причем круглосуточно. Преимущества такого вида торговли заключаются в огромном выборе товаров и услуг, а также цен на них: всегда можно найти оптимальную для себя.</p>
+	</div>
+		<div class="main-description-image">
+			<img src="img/e-commerce.jpg" width="400px" alt="электронная коммерция">
+		</div>
+		<div class="main-description-text">
+			<h3>Преимущества занятости в e-commerce</h3>
+			<ul>
+				<li><b>Перспективная работа.</b> На протяжении последних лет рынок электронной коммерции во всем мире (и в Украине тоже) демонстрирует устойчивый рост.</li>
+				<li><b>Востребованная профессия.</b> Растущему рынку требуется постоянный приток новых квалифицированных кадров - специалистов в области электронной коммерции.</li>
+				<li><b>Высокий заработок.</b> Дефицит специалистов, вызванный неудовлетворенностью спроса, формирует устойчивый рост заработной платы.</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+  <div class="recall clearfix">
+  <center><h3>Звезды украинской электронной коммерции</h3></center>
+    <div class="recall-inner">
+        <div align="center">
+          <img src="img/chechetkin.jpg" class="recall-image">
+        </div>
+        <div class="recall-inner-text ">
+          <q><cite>Владислав Чечеткин - совладелец крупнейшего в Украине интернет-магазина Rozetka.ua известен и своим бизнесом, и готовностью помочь в развитии отрасли. Сегодня Rozetka.ua является уже не просто онлайн-магазином бытовой техники и электроники, а большим маркетплейсом.</cite></q>
+        </div>
+    </div>
+    <div class="recall-inner">
+        <div align="center">
+          <img src="img/logvin.jpg" class="recall-image">
+        </div>
+        <div class="recall-inner-text ">
+          <q><cite>Андрей Логвин - со-основатель и генеральный директор шопинг-клуба modnaKasta. Его компания сумела довести аудиторию до 1,5 млн человек, объем отправленных посылок до 100 тыс посылок в месяц и занять лидирующую позицию на рынке онлайн-торговли одеждой.</cite></q>
+        </div>
+    </div>
+    <div class="recall-inner">
+        <div align="center">
+          <img src="img/mazul.jpg" width="200" class="recall-image">
+        </div>
+        <div class="recall-inner-text ">
+          <q><cite>Построение системы контроля защищенности беспроводной компьютерной сети на основе нейро-нечеткой (гибридной) сети, позволяет повысить эффективность процесса анализа уязвимостей за счет учета важных характеристик беспроводных узлов.</cite></q>
+        </div>
+    </div>
+  </div>
+
+  <a name="program"></a>
+  <div class="program-wrapper">
+  	<div class="program">
+  	   <center>
+        <h3>Программа обучения</h3>
+  		    <table>
+          <tr>
+            <th>№</th>
+            <th>Дисциплины</th>
+            <th>Краткое содержание</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Управление Интернет-проектами</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Управление электронным предприятием</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Современный финансовый менеджмент</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Мобильные приложения</td>
+            <td>Это вводный курс в бизнес-приложений. Этот курс также предусматривает введение в компьютеры и Microsoft Windows. Когда студенты закончили курс они будут иметь твердое знание и понимание отдельных офисных инструментов бизнеса в практическом использовании.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Предпринимательство и модели бизнеса в Интернет</td>
+            <td>Этот курс дает обзор делового мира с целью изучения деловой активности в отношении экономической деятельности, начиная от различных экономических систем, конкурентной бизнес-среды, глобализации рынка, различных форм деловой собственности, практики управления и методов ведения бизнеса.</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Современный финансовый менеджмент</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Организация предпринимательской деятельности</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Электронная коммерция</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Проектирование систем электронной коммерции</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Интернет-маркетинг</td>
+            <td>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+          </tr>
+          </table>  
+          </table>  
+       </center>
+  	</div>
+  </div>
+
+
+  <a name="profession"></a>
+  <div class="profession-wrapper">
+  	<div class="profession">
+  		<center><h3>Профессии электронной коммерции</h3></center>
+  		<div class="profession-card-left clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+  			<div class="profession-card-image">
+  				<img src="img/director+.jpg" height="250px">
+  			</div>
+  			<div class="profession-card-text" >
+  				<h4>Предприниматель e-commerce</h4>
+  				<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			</div>
+  		</div>
+  		<div class="profession-card-right clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+  			<div class="profession-card-text">
+  				<h4>Менеджер проектов e-commerce</h4>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			</div>
+  			<div class="profession-card-image"><img src="img/manager.jpg" height="250px"></div>
+  		</div>
+  		<div class="profession-card-left clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+  			<div class="profession-card-image"><img src="img/manager-2.jpg" height="250px"></div>
+  			<div class="profession-card-text">
+  				<h4>Интернет-маркетолог (SMM-маркетолог)</h4>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			</div>
+  		</div>
+  		<div class="profession-card-right clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+  			<div class="profession-card-text">
+  				<h4>Бизнес-консультант</h4>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			</div>
+  			<div class="profession-card-image"><img src="img/manager-girl.jpg" height="250px"></div>
+  		</div>
+  		<div class="profession-card-left clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s" data-wow-offset="10">
+  			<div class="profession-card-image"><img src="img/tester.jpg" height="250px"></div>
+  			<div class="profession-card-text">
+  				<h4>Специалист по современным бизнес-стратегиям</h4>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  			</div>
+  		</div>
+  </div>
+</div>
+	
+	<a name="user-form"></a>
+	<div class="user-form">		
+		<form action="#">
+		<center><span class="user-form-header">Заполни форму - получи скидку на обучение!</span></center>
+			<center><input type="text" name="name" placeholder="  Имя фамилия" pattern = "[А-яа-я]+\s+[А-яа-я]+" title="Имя фамилия" required></center><br>
+			<center><input type="email" name="email" placeholder="  e-mail" title="e-mail" required></center><br>
+			<center><input type="text" name="phone" placeholder="  Телефон" title="Номер телефона"></center><br>
+			<center><button class="user-form-button" type="submit">Получить скидку</button></center>
+			<center><p>Ваши данные защищенны</p></center>
+		</form>
+	</div>
+
+<div class="footer clearfix">
+	<div class="footer-left">
+		<a name="project"></a>
+		<h1>О проекте</h1>
+		<p>Рынок электронной коммерции в Украине стремительно растет. Учитывая требования времени, Полтавский университет экономики и торговли открывает новую специальность, задачей которой является подготовка специалистов в области e-commerce: предпринимателей e-commerce, менеджеров проектов, интернет-маркетологов (SMM-маркетологов), бизнес-консультантов, специалистов по современным бизнес-стратегиям.</p>
+
+	</div>
+	<div class="footer-middle">
+		<h1>Меню</h1>
+			<ul>
+				<li><a href="#information">e-commerce</a></li>
+				<li><a href="#">Программа</a></li>
+				<li><a href="#">Профессии</a></li>
+				<li><a href="#user-form">Форма</a></li>
+				<li><a href="#project"> О проекте</a></li>
+			</ul>
+
+	</div>
+	<div class="footer-right">
+		<div class="footer-right-up">
+			<h1>Контакты</h1>
+			<p>вул. Коваля, 3, м. Полтава, Полтавська область, Украина<br />
+			<br />
+			(0532) 50-91-70<br />
+			(05322) 2-18-36<br />
+			(05322) 7-91-60<br />
+			<br />
+			ecommercepuet@gmail.com<br />
+			primcom@uccu.org.ua<br />
+			rector@uccu.org.ua<br />
+			can@uccu.org.ua </p>
+		</div>
+    <div class="footer-right-down">
+      <!--<img src="img/f.jpg">&nbsp;<img src="img/t.jpg">&nbsp;<img src="img/p.jpg">&nbsp;-->
+      <a href="http://www.facebook.com" target="blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+      <a href="http://www.twitter.com" target="blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;
+      <a href="http://www.vk.com" target="blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i>&nbsp;
+    </div>
+	</div>
+</div>
+<div class="footer-down">
+    Copyright (с) 2016 Полтава: ПУЕТ
+</div>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
