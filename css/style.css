@@ -498,7 +498,7 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 .footer {
 	width: 100%;
 	box-sizing: border-box;
-	padding: 40px 10% 50px 10%;
+	padding: 40px 8% 50px 8%;
 	/*background-color: #263238;*/
 	background-color: #153F78;
 }
@@ -550,6 +550,7 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 	padding: 0;
 }
 
+
 .footer ul li {
 	padding-top: 8px;
 }
@@ -560,6 +561,18 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
     margin: 0;
     font-size: 20px;
     color: #fff;
+}
+
+.footer-left ul {
+	margin: 0;
+	margin-top: -10px;
+	padding: 0px 0px 0px 30px;
+}
+
+.footer-left ul li {
+	padding-top: 3px;
+	font-size: 16px;
+	color: #fff;
 }
 
 .footer-down {
