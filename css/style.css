@@ -76,7 +76,7 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 
 .menu-logo p {
 	margin: 0;
-	color: #ffffff;
+	color: #ffffff; 
 }
 
 .menu-logo-image {
@@ -84,6 +84,8 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 }
 
 .menu-logo-font {
+	margin: 0;
+	padding: 2px 0px 0px 10px;
 	display: block;
 }
 
@@ -301,7 +303,7 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 
 .achivement {
 		margin: 0 auto;
-		padding: 100px 60px 100px 60px;
+		padding: 60px;
 		width: 1024px;
 }
 
@@ -354,7 +356,7 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 }
 .user-form-header {
 		margin: 0;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		display: inline-block;
 		font-size: 28px;
 		font-weight: normal; 
@@ -362,6 +364,13 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 		color: #fff;
 		font-family: 'Roboto Condensed', sans-serif;
 }
+
+.user-form-text {
+		margin: 0;
+		font-weight: normal; 
+		color: #fff;
+}
+
 .user-form input {
 		margin-top: 10px;
 		height: 35px;
