@@ -566,11 +566,11 @@ tr:nth-child(odd) {background-color:#E3F2FD;}
 .footer-left ul {
 	margin: 0;
 	margin-top: -10px;
-	padding: 0px 0px 0px 30px;
+	padding: 0px 0px 5px 30px;
 }
 
 .footer-left ul li {
-	padding-top: 3px;
+	padding-top: 2px;
 	font-size: 16px;
 	color: #fff;
 }
